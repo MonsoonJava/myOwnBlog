@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="cn.blog.mapper.ArticalMapper">
+  
+  	<select id="queryArtica" resultType="Artical">
+  		select * from artical 
+  	</select>
+  
+  	<select id="queryArticalById" resultType="Artical">
+  		select * from artical where articleId = #{id}
+  	</select>
+  
+  
+  </mapper>

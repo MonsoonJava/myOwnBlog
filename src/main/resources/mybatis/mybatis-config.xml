@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 	<properties resource="jdbc.properties"></properties> -->
+	<settings>
+		<!-- 开启驼峰匹配 -->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<!-- 在全局的位置关闭二级缓存  -->
+		<setting name="cacheEnabled" value="false"/>
+		<!-- 开启延迟加载 -->
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<!-- true  当有一个进行加载的时候，就会把所有没有加载的内容加载进来
+			 false 的时候 按需加载，只有调用自己对应的getter的才会去进行加载
+		 -->
+		<setting name="aggressiveLazyLoading" value="false"/>
+	</settings>
+</configuration>
